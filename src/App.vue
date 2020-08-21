@@ -1,18 +1,63 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" alt="">
-    <HelloWorld msg="ชอบรูปไหนมากกว่ากัน?"/>
-    <div class="col-12"><h1>{{total+total1+total2}}</h1></div>
-    <br><hr>
-    <div class="row">
-        <!-- 2. รับค่าจาก emall @cc แล้วส่งไปทำงานใน function "sum"-->
-      <div class="col-6"><br><img alt="รูป" width="40%" src="./assets/3.jpg"><br><br><Counter lable=""  @cc="sum" /><hr></div>
-      <div class="col-6"><h1>{{total}}</h1></div>
-      <div class="col-6"><br><img alt="รูป" width="40%" src="./assets/2.jpg"><br><br><Counter lable=""  @cc="sum1" /><hr></div>
-      <div class="col-6"><h1>{{total1}} </h1></div>
-      <div class="col-6"><br><img alt="รูป" width="40%" src="./assets/7.jpg"><br><br><Counter lable=""  @cc="sum2" /><hr></div>
-      <div class="col-6"><h1 style="text-center">{{total2}} </h1></div>
+    <HelloWorld msg="Welcome To Photo"/>
+    <p>By Patcharapa Chaitap</p>
+    <div class="container col-11">
+      <div class="card-body" style="background-image: url(image/c51eefd6458889941fff518c31e924b4.jpg);">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner">
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/110.png" alt="First slide">
+          </div>
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/4.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/23.png" alt="Third slide">
+          </div>
+        </div> 
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-custom-icon" aria-hidden="true">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-custom-icon" aria-hidden="true">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
+  </div>
+
+    
+    <br><hr>
+  <div class="container">
+    <div class="row" style="background-color: rgb(184, 197, 190);">
+        <!-- 2. รับค่าจาก emall @cc แล้วส่งไปทำงานใน function "sum"-->
+        <div class="col-6"><br><img alt="รูป" width="50%" src="./assets/3.jpg"><br><br><Counter lable=""  @cc="sum" /></div>
+        <div class="col-6"><h1>{{total}}</h1></div>
+      </div>
+      <hr>
+      <div class="row" style="background-color: rgb(184, 197, 190);">
+        <div class="col-6"><br><img alt="รูป" width="50%" src="./assets/2.jpg"><br><br><Counter lable=""  @cc="sum1" /></div>
+       <div class="col-6"><h1>{{total1}}</h1></div>
+      </div>
+      <hr>
+      <div class="row" style="background-color: rgb(184, 197, 190);">
+        <div class="col-6"><br><img alt="รูป" width="50%" src="./assets/7.jpg"><br><br><Counter lable=""  @cc="sum2" /></div>
+        <div class="col-6"><h1>{{total2}}</h1></div>
+      </div>
+      <hr>
+      <br>
+  </div>
   </div>
 
   
@@ -55,11 +100,12 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-image: url(./assets/42.jpg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #4a84be;
   margin-top: 60px;
 }
 </style>
